@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        let a = [1,2,'’1’',3,'’a’'] 
+        let b = [1,2,3,4]
+        let c = []
+        let d = []
+        a.forEach((item, index, array)=>{
+            for(let i = 0 ; i < b.length ; i++){
+                if(a[index]===b[i]){
+                    d.push(a[index])
+                }
+                else{
+                    c.push(a[index])
+                }
+            }
+        })
+        console.log("mang moi 1 ",d);
+        console.log("mang moi 2 ",c);
+
+
+    </script>
+  </body>
+</html>
